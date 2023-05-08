@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap";
+
+$theme-colors: (
+    "darker": #153542,
+    "dark": #25545C,
+    "light": #538677,
+    "lighter": #8BBA98,
+    "lightest": #E0E0E0,
+    "primary": #E3582D,
+    "secondary": #CECE86
+);
+
+:root {
+    font-size: 16px;
+}
