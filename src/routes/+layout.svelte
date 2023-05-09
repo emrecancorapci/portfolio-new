@@ -1,8 +1,7 @@
 <script>
 	import Navbar from '../components/navbar.svelte';
 
-	import './styles.scss';
-	import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+    import '../sass/styles.scss'
 </script>
 
 <main>
