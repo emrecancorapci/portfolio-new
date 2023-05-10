@@ -1,24 +1,23 @@
 @use "sass:map";
-@import url(https://fonts.googleapis.com/css?family=Space+Grotesk);
-
-$theme-colors: (
-    "darker": #153542,
-    "dark": #25545c,
-    "light": #538677,
-    "lighter": #8bba98,
-    "white": #e0e0e0,
-    "primary": #e3582d,
-    "secondary": #cece86,
-);
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:thin,extrelight,light,regular,regularitalic,medium,mediumitalic,semibold,semibolditalic,bold,bolditalic);
+@import "vars";
 
 :root {
     font-size: 16px;
 }
 
 body {
-    font-family: "Space Grotesk", sans-serif;
-    font-style: normal;
     background-color: #cece86;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    font-family: 'Space Grotesk', sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -37,18 +36,27 @@ h2 {
     font-weight: 500;
     font-size: 2rem;
     line-height: 41px;
+    &.display {
+        line-height: 100%;
+    }
 }
 
 h3 {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 31px;
+    &.display {
+        line-height: 100%;
+    }
 }
 
 h4 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 20px;
+    &.display {
+        line-height: 75%;
+    }
 }
 
 h5 {
@@ -86,7 +94,7 @@ a {
     }
 }
 
-.text-shadow {
+.tx-shadow {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 
     &-lg {

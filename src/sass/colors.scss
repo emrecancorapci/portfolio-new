@@ -1,0 +1,13 @@
+@import "vars";
+
+@each $color, $value in $theme-colors {
+    .tx-#{$color} {
+        color: $value;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}

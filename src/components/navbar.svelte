@@ -1,49 +1,62 @@
-<div class="row navbar hard-shadow">
-	<div class="col-auto">
-		<a href="/">
-			<img src="/img/Logo.png" alt="Logo - Emre Can">
-        </a>
-	</div>
+<div class="row ec-navbar bg-dark hard-shadow align-items-center">
+	<a href="/" class="logo col-12 col-xl-auto col-lg-12 text-center pb-3 pb-xl-0 pb-lg-3">
+		<img src="/img/Logo.png" alt="Logo - Emre Can" />
+	</a>
 	<div class="col" />
-	<div class="col-auto nav hard-shadow">
-		<a href="/" class="text-shadow-sm">Home</a>
-		<a href="/Projects" class="text-shadow-sm">Projects</a>
-		<a href="/About" class="text-shadow-sm">About</a>
-		<a href="/ContactMe" class="text-shadow-sm">Contact Me</a>
+	<div
+		class="col-12 col-xl-auto col-lg-12 ec-nav bg-lighter hard-shadow d-flex justify-content-center"
+	>
+		<a href="/" class="tx-shadow-sm">Home</a>
+		<a href="/Projects" class="tx-shadow-sm">Projects</a>
+		<a href="/About" class="tx-shadow-sm">About</a>
+		<a href="/ContactMe" class="tx-shadow-sm">Contact Me</a>
 	</div>
 </div>
 
 <style lang="scss">
 	@use 'sass:map';
-	@import 'src/sass/styles.scss';
+	@import 'src/sass/vars.scss';
+	@import 'src/sass/colors.scss';
 
-	.navbar {
-        margin: 0 8rem;
-		padding: 1rem 2rem;
-		background-color: map.get($theme-colors, 'dark');
-		border-radius: 1rem;
+	.logo {
+		@media (min-width: 992px) {
+			height: 35px;
+		}
 	}
 
-	.nav {
+	.ec-navbar {
+		@media (min-width: 992px) {
+			margin: 0 8rem;
+		}
+		@media (max-width: 992px) {
+			margin: 0 0rem;
+		}
+		margin: 0 8rem;
+		padding: 1rem 2rem;
+		border-radius: 1rem;
+
+		transition: all 0.3s ease-in-out;
+	}
+
+	.ec-nav {
 		padding: 0.5rem 1rem;
-		background-color: map.get($theme-colors, 'lighter');
 		border-radius: 32px 4px;
 
 		a {
 			padding: 0 1rem;
 			color: map.get($theme-colors, 'darker');
 
-            &:hover {
-                color: map.get($theme-colors, 'white');
-            }
+			&:hover {
+				color: map.get($theme-colors, 'white');
+			}
 
-            &:active {
-                color: map.get($theme-colors, 'secondary');
-            }
+			&:active {
+				color: map.get($theme-colors, 'secondary');
+			}
 
-            .active {
-                color: map.get($theme-colors, 'primary');
-            }
+			.active {
+				color: map.get($theme-colors, 'primary');
+			}
 		}
 	}
 </style>
