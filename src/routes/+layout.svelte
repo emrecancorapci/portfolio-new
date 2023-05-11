@@ -1,26 +1,19 @@
 <script>
 	import Navbar from '../components/navbar.svelte';
 
-    import '../sass/styles.scss'
+	import 'bootstrap/dist/css/bootstrap.min.css';
+	import '../sass/styles.scss';
 </script>
 
 <main>
-	<div class="container">
+	<div class="container w-100">
 		<slot />
 		<Navbar />
 	</div>
 </main>
 
-<style lang="scss">
-	main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-		font-family: 'Space Grotesk', sans-serif;
-		font-style: normal;
-		background-color: #cece86;
-		height: 100vh;
-		width: 100vw;
+<style>
+	.container {
+		transition: all 0.3s ease-in-out;
 	}
 </style>

@@ -9,7 +9,7 @@
 		<a href="/" class="tx-shadow-sm">Home</a>
 		<a href="/Projects" class="tx-shadow-sm">Projects</a>
 		<a href="/About" class="tx-shadow-sm">About</a>
-		<a href="/ContactMe" class="tx-shadow-sm">Contact Me</a>
+		<a href="/Contact" class="tx-shadow-sm">Contact Me</a>
 	</div>
 </div>
 
